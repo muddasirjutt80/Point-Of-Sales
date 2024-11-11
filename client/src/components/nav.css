@@ -1,0 +1,176 @@
+.navbar {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  padding-top: 1rem;
+  position: fixed;
+  width: 100%;
+  background: linear-gradient(45deg, #6C5B7B, #C06C84, #F67280);
+  color: white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  z-index: 999;
+  flex-wrap: wrap;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  order: 1;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s ease;
+  order: 3;
+}
+
+.nav-links li {
+  margin: 0 0.5rem;
+  position: relative;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.logoutBTN {
+  padding: 3px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.logoutBTN:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.cart-items {
+  font-size: 24px;
+  position: relative;
+  float: none;
+  cursor: pointer;
+  order: 4;
+}
+
+.cart-items small {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  background: #fff;
+  color: #C06C84;
+  padding: 3px 7px;
+  border-radius: 50%;
+}
+
+.user {
+  margin: 0;
+  padding: 0;
+  order: 2;
+}
+
+.user p {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+/* @media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+  .cart-items {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+} */
+@media (max-width: 768px) {
+  /* .navbar {
+    /* No need for flex properties since you're using a grid layout */
+  
+
+  .menu-icon {
+    display: block;
+    grid-column: 1; /* places the menu icon in the first column */
+    justify-self: start; /* aligns the menu icon to the start (left) */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .user {
+    grid-column: 2; /* places the user in the middle column */
+    justify-self: center; /* centers the username */
+  }
+
+  .cart-items {
+    grid-column: 3; /* places the cart icon in the third column */
+    justify-self: end; /* aligns the cart icon to the end (right) */
+    position: relative; /* reset to relative so the cart bubble appears correctly */
+    top: auto; /* reset the top value */
+    right: auto; /* reset the right value */
+  }
+}

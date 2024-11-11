@@ -1,0 +1,125 @@
+/* body { */
+    /* font-family: 'Arial', sans-serif; */
+    /* background-color: #e6f2ff; */
+    /* margin: 0; */
+    /* padding: 0; */
+    /* height: 100vh; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+/* } */
+
+.signup-container {
+    display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.signup-card {
+    width: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-card footer{
+    background-color: #e8e8e8;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.signup-card footer a {
+    color: #333;
+    text-decoration: none;
+  }
+
+header {
+    background: linear-gradient(45deg, #6C5B7B, #C06C84, #F67280);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+main {
+    padding: 20px;
+}
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-btn {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.next-btn{
+    background: linear-gradient(45deg, #6C5B7B, #C06C84, #F67280);
+    color: white;
+  }
+  .next-btn:disabled{
+    background: linear-gradient(45deg, #6C5B7B, #C06C84, #F67280);
+    opacity: 50%;
+    cursor: not-allowed;
+  }
+
+  .submit-btn{
+    background: linear-gradient(45deg, #6C5B7B, #C06C84, #F67280);
+    color: white;
+  }
+  .submit-btn:disabled{
+    background: linear-gradient(45deg, #6C5B7B, #C06C84, #F67280);
+    opacity: 50%;
+    cursor: not-allowed;
+  }
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

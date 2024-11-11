@@ -1,0 +1,24 @@
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;  /* provides spacing between items */
+  }
+  
+  .categoryFlex {
+    display: flex;
+    flex-direction: column;  /* stacks image below text */
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    transition: background 0.3s ease-in-out;
+  
+    /* for hover effect, optional */
+    &:hover {
+      background: #fff;
+    }
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
